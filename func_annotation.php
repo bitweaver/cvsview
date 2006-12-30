@@ -11,7 +11,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: func_annotation.php,v 1.1 2006/12/30 13:30:44 lsces Exp $
+ * @version $Id: func_annotation.php,v 1.2 2006/12/30 14:24:33 lsces Exp $
  **/
 
 function DisplayFileAnnotation($File, $Revision = "")
@@ -35,8 +35,6 @@ function DisplayFileAnnotation($File, $Revision = "")
 		if ($Response !== true) {
 			return;
 		}
-
-vd($CVSServer->ANNOTATION);
 
 		$search = array('<', '>', '\n');
 		$replace = array('&lt;', '&gt;', '');
