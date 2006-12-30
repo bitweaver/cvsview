@@ -49,7 +49,7 @@ function DisplayDirListing()
 			$gBitSmarty->assign('ParentIcon', $env['script_path'].'/icons/parent.png' );
 		}
 
-		$HREF = str_replace("//", "/", $env['script_name']."?mp=".$env['mod_path']);
+		$HREF = str_replace("//", "/", $env['script_name']."?mp=".$env['mod_path']."/");
 		$gBitSmarty->assign('HREF', $HREF );
 		$gBitSmarty->assign('DownloadIcon', $env['script_path'].'/icons/download.png' );
 		$gBitSmarty->assign('FolderIcon', $env['script_path'].'/icons/folder.png' );
@@ -64,7 +64,7 @@ function DisplayDirListing()
 		foreach ($CVSServer->FILES as $File) {
 			$lfiles[$i]['Name'] = $File['Name'];
 			$lfiles[$i]['Head'] = $File['Head'];
-			$lfiles[$i]['HREF'] = str_replace("//", "/", $env['script_name']."?mp=".$env['mod_path'].$File["Name"]);
+			$lfiles[$i]['HREF'] = str_replace("//", "/", $env['script_name']."?mp=".$env['mod_path']."/".$File["Name"]);
 			$lfiles[$i]['DateTime'] = strtotime($File["Revisions"][$File["Head"]]["date"]);
 			$lfiles[$i]['AGE'] = CalculateDateDiff($lfiles[$i]['DateTime'], strtotime(gmdate("M d Y H:i:s")));
 			$lfiles[$i]['Author'] = $File["Revisions"][$File["Head"]]["author"];
