@@ -1,10 +1,10 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.1 2006/12/30 13:39:34 lsces Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.2 2006/12/30 15:07:53 lsces Exp $ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 
 <div id="filehistory">
 	<div class="header">
-		<h1>{if $pagetitle ne ''}{$pagetitle}{else}{tr}WikiPages{/tr}{/if}</h1>
+		<h1>{if $pagetitle ne ''}{$pagetitle}{else}{tr}File History{/tr}{/if}</h1>
 	</div>
 
 	{formfeedback error=$errors}
