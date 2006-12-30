@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.2 2006/12/30 15:07:53 lsces Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.3 2006/12/30 15:34:26 lsces Exp $ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 
@@ -19,10 +19,8 @@
 						(<a href="{$HREF}&amp;df&amp;r1={$histories[line].$PrevRevision}&amp;r2={$histories[line].$PrevRevision}">diff to previous</a>)&nbsp;
 					{/if}
 					(<a href="{$HREF}&amp;fa={$histories[line].Revision}">annotate</a>)</p>
-					<p><b>Last Checkin:</b> {$histories[line].Last}</p>
-					<p><b>Branch</b> {$histories[line].Branches}</p>
-					<p><b>Date</b> {$histories[line].date}</p>
-					<p><b>Time</b> {$histories[line].time}</p>
+					<p><b>Last Checkin:</b> {$histories[line].Last} <b>Branch</b> {$histories[line].Branches}</p>
+					<p><b>Date</b> {$histories[line].date} <b>Time</b> {$histories[line].time}</p>
 					<p><b>Author</b> {$histories[line].author}</p>
 					<p><b>State</b> {$histories[line].state}</p>
 					<p><b>Changes {$histories[line].$PrevRevision}:</b>
@@ -34,7 +32,7 @@
 						</p>
 					{/if}
 					<p><b>Log Message:</b></p>
-					<p class="logmsg">{$histories[history].LogMessage}</p>
+					<p class="logmsg">{$histories[line].LogMessage}</p>
 					<hr />
 				</div>
 			{/section}
