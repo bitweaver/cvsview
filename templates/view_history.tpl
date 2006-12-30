@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.3 2006/12/30 15:34:26 lsces Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.4 2006/12/30 16:19:29 lsces Exp $ *}
 {strip}
 <div class="floaticon">{bithelp}</div>
 
@@ -12,7 +12,6 @@
 			{section name=line loop=$histories}
 				<div id="filerevision">
 					<p><b>Revision</b> {$histories[line].Revision}&nbsp;
-					(<a href="{$HREF}&amp;fa={$histories[line].Revision}">annotate</a>)&nbsp;
 					<a href="{$HREF}&amp;fv&amp;dt={$histories[line].DateTime}">view</a>&nbsp;
 					<a href="{$HREF}&amp;fd&amp;dt={$histories[line].DateTime}">download</a>&nbsp;
 					{if $histories[line].$PrevRevision }
