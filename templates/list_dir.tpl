@@ -1,6 +1,10 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/list_dir.tpl,v 1.1 2006/12/30 13:39:34 lsces Exp $ *}
+{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/list_dir.tpl,v 1.2 2007/01/01 23:39:38 lsces Exp $ *}
 {strip}
 <div class="display cvsview">
+	<div class="header">
+		<h1>{if $pagetitle ne ''}{$pagetitle}{else}{tr}Directory Listing{/tr}{/if}</h1>
+	</div>
+
 	{include file="bitpackage:cvsview/page_header.tpl"}
 
 	{formfeedback error=$errors}

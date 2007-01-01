@@ -7,14 +7,14 @@
  * Purpose: To store the configuration for this instance of phpCVSView
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: config.php,v 1.2 2006/12/30 14:40:57 lsces Exp $
+ * @version $Id: config.php,v 1.3 2007/01/01 23:39:38 lsces Exp $
  * @copyright 2003-2005 Brian A Cheeseman
  **/
 
 // CVSROOT configuration.
 /* CMS Source Repository */
 $config['cvs']['CMS']['server'] = "lscserver";
-$config['cvs']['CMS']['cvsroot'] = "/CVSROOT/CMS";
+$config['cvs']['CMS']['cvsroot'] = "/CVSROOT/Projects";
 $config['cvs']['CMS']['username'] = "guest";
 $config['cvs']['CMS']['password'] = "";
 $config['cvs']['CMS']['mode'] = "pserver";
@@ -33,7 +33,7 @@ $config['cvs']['bitweaver']['html_title'] = "bitweaver Source Code Library";
 $config['cvs']['bitweaver']['html_header'] = "bitweaver Source Code Library";
 
 // Default CVSROOT configuration to use.
-$config['default_cvs'] = "bitweaver";
+$config['default_cvs'] = "CMS";
 
 // Settings for TAR creation.
 $config['TempFileLocation'] = "c:/tmp";

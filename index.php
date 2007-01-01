@@ -10,7 +10,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: index.php,v 1.3 2006/12/30 14:42:01 lsces Exp $
+ * @version $Id: index.php,v 1.4 2007/01/01 23:39:38 lsces Exp $
  */
 
 // Initialization
@@ -30,6 +30,27 @@ $env['script_path'] = (empty($env['script_path']))? '/' : $env['script_path'];
 
 $env['mod_path'] = (isset($_GET["mp"])) ? $_GET["mp"] : "/";
 $env['mod_path'] = str_replace("//", "/", $env['mod_path']);
+
+$gBitSmarty->assign('root', $env['script_name'] );
+
+$Dirs = explode("/", $env['mod_path']);
+$intCount = 1;
+$OffSet = 1;
+// Need to tweek for file or folder as last element
+//if ($LastIsFile) {
+//	$OffSet = 1;
+//}
+
+$links = array();
+while($intCount < count($Dirs)-$OffSet) {
+	if (($intCount != count($Dirs)-$OffSet)) {
+		$links[$intCount-1]['link'] = ImplodeToPath($Dirs, "/", $intCount);
+		$links[$intCount-1]['name'] = $Dirs[$intCount];
+	} 
+	$intCount++;
+}
+$gBitSmarty->assign('last', $Dirs[$intCount] );
+$gBitSmarty->assign_by_ref('links', $links );
 
 // Determine the CVSROOT settings required for this instance.
 $env['CVSROOT'] = (empty($_COOKIE['config']['CVSROOT'])) ? $config['default_cvs'] : $_COOKIE['config']['CVSROOT'];

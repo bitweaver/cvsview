@@ -7,5 +7,14 @@
 	{if $gBitSystem->isFeatureActive( 'cvs_description' ) and $description}
 		<h2>{$pageInfo.description|escape}</h2>
 	{/if}
-
+	
+<div class="quicknav">
+<a href="{$root}">Root</a>
+{section name=link loop=$links}
+	>>&nbsp;<a href="{$root}?mp={$links[link].link}">{$links[link].name}</a>
+{/section}
+{if $last != ''}
+	>>&nbsp;{$last}
+{/if}
+</div>
 </div><!-- end .header -->

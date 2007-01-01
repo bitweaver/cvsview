@@ -1,11 +1,12 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.4 2006/12/30 16:19:29 lsces Exp $ *}
-{strip}
+{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.5 2007/01/01 23:39:38 lsces Exp $ *}
 <div class="floaticon">{bithelp}</div>
 
 <div id="filehistory">
 	<div class="header">
 		<h1>{if $pagetitle ne ''}{$pagetitle}{else}{tr}File History{/tr}{/if}</h1>
 	</div>
+
+	{include file="bitpackage:cvsview/page_header.tpl"}
 
 	{formfeedback error=$errors}
 
@@ -39,4 +40,3 @@
 {include file="bitpackage:cvsview/diff_form.tpl"}
 
 </div><!-- end .filehistory -->
-{/strip}
