@@ -10,7 +10,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: index.php,v 1.4 2007/01/01 23:39:38 lsces Exp $
+ * @version $Id: index.php,v 1.5 2008/06/25 22:21:08 spiderr Exp $
  */
 
 // Initialization
@@ -80,29 +80,29 @@ require_once 'func_archive_download.php';
 // begin display logic
 if (isset($_GET["fh"])) {
 	DisplayFileHistory();
-	$gBitSystem->display( 'bitpackage:cvsview/view_history.tpl', tra( 'Annotation history for: ' ) );
+	$gBitSystem->display( 'bitpackage:cvsview/view_history.tpl', tra( 'Annotation history for: ' ) , array( 'display_mode' => 'display' ));
 } else {
 	if (isset($_GET["fa"])) {
 		 DisplayFileAnnotation($env['mod_path'], $_GET["fa"]);
-		 $gBitSystem->display( 'bitpackage:cvsview/view_annotation.tpl', tra( 'Annotation history for: ' ) );
+		 $gBitSystem->display( 'bitpackage:cvsview/view_annotation.tpl', tra( 'Annotation history for: ' ) , array( 'display_mode' => 'display' ));
 	} else {
 		if (isset($_GET["fv"])) {
 			DisplayFileContents($env['mod_path'], $_GET["dt"]);
-			$gBitSystem->display( 'bitpackage:cvsview/view_contents.tpl', tra( 'Revision history for: ' ) );
+			$gBitSystem->display( 'bitpackage:cvsview/view_contents.tpl', tra( 'Revision history for: ' ) , array( 'display_mode' => 'display' ));
 		} else {
 			if (isset($_GET["fd"])) {
 			    DownloadFile($env['mod_path'], $_GET["dt"]);
-			    $gBitSystem->display( 'bitpackage:cvsview/download.tpl', tra( 'download: ' ) );
+			    $gBitSystem->display( 'bitpackage:cvsview/download.tpl', tra( 'download: ' ) , array( 'display_mode' => 'display' ));
 			} else {
 				if (isset($_GET["df"])) {
 				    DisplayFileDiff($_GET["r1"], $_GET["r2"]);
-				    $gBitSystem->display( 'bitpackage:cvsview/view_diff.tpl', tra( 'Revision Diff for: ' ) );
+				    $gBitSystem->display( 'bitpackage:cvsview/view_diff.tpl', tra( 'Revision Diff for: ' ) , array( 'display_mode' => 'display' ));
 				} else {
 					if (isset($_GET["dp"])) {
 					    DownloadArchive();
 					} else {
 						DisplayDirListing();
-						$gBitSystem->display( 'bitpackage:cvsview/list_dir.tpl', tra( 'CVS Archive: ' ) );
+						$gBitSystem->display( 'bitpackage:cvsview/list_dir.tpl', tra( 'CVS Archive: ' ) , array( 'display_mode' => 'display' ));
 					}
 				}
 			}
