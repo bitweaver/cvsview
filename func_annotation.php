@@ -11,7 +11,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: func_annotation.php,v 1.2 2006/12/30 14:24:33 lsces Exp $
+ * @version $Id: func_annotation.php,v 1.3 2008/07/10 18:21:45 lsces Exp $
  **/
 
 function DisplayFileAnnotation($File, $Revision = "")
@@ -19,7 +19,7 @@ function DisplayFileAnnotation($File, $Revision = "")
 	global $gBitSmarty, $env;
 
 	// Create our CVS connection object and set the required properties.
-	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['password']);
+	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['passwd']);
 
 	// Connect to the CVS server.
 	if ($CVSServer->Connect() === true) {

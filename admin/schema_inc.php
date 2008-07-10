@@ -8,7 +8,7 @@ $tables = array(
   server C(64),
   cvsroot C(64),
   username C(64),
-  password C(64),
+  passwd C(64),
   mode I4
   CONSTRAINT ', CONSTRAINT `nl_con_ref` FOREIGN KEY (`content_id`) REFERENCES `".BIT_DB_PREFIX."liberty_content`( `content_id` )'
 "

@@ -14,7 +14,7 @@
  * 		Nigel McNie - Suggestion of Caching of source code from repository, hence improving efficiency.
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: func_view.php,v 1.1 2006/12/30 13:30:44 lsces Exp $
+ * @version $Id: func_view.php,v 1.2 2008/07/10 18:21:45 lsces Exp $
  **/
 
 include_once( UTIL_PKG_PATH . 'geshi/geshi.php' );
@@ -24,7 +24,7 @@ function DisplayFileContents($File, $Revision = "")
 	global $gBitSmarty, $config, $env;
 
 	// Create our CVS connection object and set the required properties.
-	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['password']);
+	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['passwd']);
 
 	// Check and see if this file and version has already been viewed and exists in the cache.
 	$CachedFileName = $config['Cache']['Location'];

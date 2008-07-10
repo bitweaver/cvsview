@@ -18,7 +18,7 @@ function DisplayDirListing()
 	global $gBitSmarty, $env;
 
 	// Create our CVS connection object and set the required properties.
-	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['password']);
+	$CVSServer = new CVS_PServer($env['CVSSettings']['cvsroot'], $env['CVSSettings']['server'], $env['CVSSettings']['username'], $env['CVSSettings']['passwd']);
 
 	// Connect to the CVS server.
 	if ($CVSServer->Connect() === true) {
