@@ -18,7 +18,7 @@ if( $gBitSystem->isPackageActive( 'cvsview' ) ) {
 	$gBitSystem->registerAppMenu( $menuHash );
 
 	require_once ( CVSVIEW_PKG_PATH.'theme.php' );
-	require_once( CVSVIEW_PKG_PATH.'phpcvs.php' );
+	require_once( CVSVIEW_PKG_PATH.'PhpCvs.php' );
 	require_once ( CVSVIEW_PKG_PATH.'phpcvsmime.php' );
 
 }
