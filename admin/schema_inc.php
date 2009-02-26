@@ -35,8 +35,8 @@ $gBitInstaller->registerPreferences( CVSVIEW_PKG_NAME, array(
 ) );
 
 // ### Default UserPermissions
-$gBitInstaller->registerUserPermissions( NEWSLETTERS_PKG_NAME, array(
-	array('p_cvsview_admin', 'Can admin and add cvs archives', 'admin', 'cvsview'),
+$gBitInstaller->registerUserPermissions( CVSVIEW_PKG_NAME, array(
+	array('p_cvsiew_admin', 'Can admin and add cvs archives', 'admin', 'cvsview'),
 	array('p_cvsview_view', 'Can view cvs archive', 'registered', 'cvsview'),
 ) );
 
