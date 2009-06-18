@@ -14,10 +14,10 @@
  * 		Nigel McNie - Suggestion of Caching of source code from repository, hence improving efficiency.
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: func_view.php,v 1.2 2008/07/10 18:21:45 lsces Exp $
+ * @version $Id: func_view.php,v 1.3 2009/06/18 06:10:59 lsces Exp $
  **/
 
-include_once( UTIL_PKG_PATH . 'geshi/geshi.php' );
+//include_once( UTIL_PKG_PATH . 'geshi/geshi.php' );
 
 function DisplayFileContents($File, $Revision = "")
 {
