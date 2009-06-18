@@ -7,13 +7,15 @@
  * Purpose: To store the configuration for this instance of phpCVSView
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: config.php,v 1.4 2008/07/10 18:21:45 lsces Exp $
+ * @version $Id: config.php,v 1.5 2009/06/18 06:15:24 lsces Exp $
  * @copyright 2003-2005 Brian A Cheeseman
  **/
 
 // CVSROOT configuration.
-/* CMS Source Repository */
-$config['cvs']['CMS']['server'] = "lscserver";
+/* CMS Source Repository
+ Add your own local CVS link here
+  */
+$config['cvs']['CMS']['server'] = "10.0.0.5";
 $config['cvs']['CMS']['cvsroot'] = "/CVSROOT/Projects";
 $config['cvs']['CMS']['username'] = "guest";
 $config['cvs']['CMS']['passwd'] = "";
@@ -33,13 +35,13 @@ $config['cvs']['bitweaver']['html_title'] = "bitweaver Source Code Library";
 $config['cvs']['bitweaver']['html_header'] = "bitweaver Source Code Library";
 
 // Default CVSROOT configuration to use.
-$config['default_cvs'] = "CMS";
+$config['default_cvs'] = "bitweaver";
 
 // Settings for TAR creation.
-$config['TempFileLocation'] = "c:/tmp";
+$config['TempFileLocation'] = "/var/tmp";
 
 // Settings for Output Cache.
 $config['Cache']['Enable'] = true;
-$config['Cache']['Location'] = "c:/tmp/phpCVSViewCache";
+$config['Cache']['Location'] = "/var/tmp/phpCVSViewCache";
 
 ?>
