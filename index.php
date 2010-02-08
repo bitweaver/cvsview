@@ -10,12 +10,12 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: index.php,v 1.5 2008/06/25 22:21:08 spiderr Exp $
+ * @version $Id: index.php,v 1.6 2010/02/08 21:27:22 wjames5 Exp $
  */
 
 // Initialization
 require_once 'config.php';
-require_once( '../bit_setup_inc.php' );
+require_once( '../kernel/setup_inc.php' );
 
 	require_once ( CVSVIEW_PKG_PATH.'PhpCvs.php' );
 	require_once ( CVSVIEW_PKG_PATH.'phpcvsmime.php' );
