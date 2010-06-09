@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/list_dir.tpl,v 1.2 2007/01/01 23:39:38 lsces Exp $ *}
+{* $Header$ *}
 {strip}
 <div class="display cvsview">
 	<div class="header">

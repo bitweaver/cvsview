@@ -11,7 +11,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: func_archive_download.php,v 1.2 2008/07/10 18:21:45 lsces Exp $
+ * @version $Id$
  **/
  
 require_once("Archive/Tar.php");

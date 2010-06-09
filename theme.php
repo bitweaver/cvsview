@@ -7,7 +7,7 @@
  * Purpose: To provide the HTML page header code
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: theme.php,v 1.1 2006/12/30 13:30:44 lsces Exp $
+ * @version $Id$
  * @copyright 2003-2005 Brian A Cheeseman
  **/
 

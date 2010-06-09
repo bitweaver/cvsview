@@ -7,7 +7,7 @@
  * Purpose: To provide the mime translations required for downloading
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: phpcvsmime.php,v 1.1 2006/12/30 13:30:44 lsces Exp $
+ * @version $Id$
  * @copyright 2003-2005 Brian A Cheeseman
  */
 

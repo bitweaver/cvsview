@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_annotation.tpl,v 1.2 2007/01/01 23:39:38 lsces Exp $ *}
+{* $Header$ *}
 	<div class="header">
 		<h1>{if $pagetitle ne ''}{$pagetitle}{else}{tr}File Annotation{/tr}{/if}</h1>
 	</div>

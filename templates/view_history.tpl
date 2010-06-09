@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_bit_cvsview/templates/view_history.tpl,v 1.5 2007/01/01 23:39:38 lsces Exp $ *}
+{* $Header$ *}
 <div class="floaticon">{bithelp}</div>
 
 <div id="filehistory">

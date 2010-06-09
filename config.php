@@ -7,7 +7,7 @@
  * Purpose: To store the configuration for this instance of phpCVSView
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: config.php,v 1.5 2009/06/18 06:15:24 lsces Exp $
+ * @version $Id$
  * @copyright 2003-2005 Brian A Cheeseman
  **/
 

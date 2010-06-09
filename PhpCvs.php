@@ -12,7 +12,7 @@ error_reporting(E_ALL);
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: PhpCvs.php,v 1.2 2008/10/20 21:40:09 spiderr Exp $
+ * @version $Id$
  **/
 
 /**

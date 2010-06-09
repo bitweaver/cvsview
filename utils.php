@@ -7,7 +7,7 @@
  * Purpose: To provide utility functions for the phpCVSViewer.
  *
  * @author Brian A Cheeseman <bcheesem@users.sourceforge.net>
- * @version $Id: utils.php,v 1.1 2006/12/30 13:30:41 lsces Exp $
+ * @version $Id$
  * @copyright 2003-2005 Brian A Cheeseman
  **/
 

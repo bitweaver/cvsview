@@ -10,7 +10,7 @@
  * @copyright 2003-2005 Brian A Cheeseman
  * 
  * Ported to bitweaver framework by Lester Caine 2006-12-29
- * @version $Id: index.php,v 1.6 2010/02/08 21:27:22 wjames5 Exp $
+ * @version $Id$
  */
 
 // Initialization
